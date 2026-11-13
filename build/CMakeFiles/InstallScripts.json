@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/cat/gsb/uid3606/build/cmake_install.cmake",
+		"/home/cat/gsb/uid3606/build/src/spng/cmake_install.cmake",
+		"/home/cat/gsb/uid3606/build/sharedlib/cmake_install.cmake",
+		"/home/cat/gsb/uid3606/build/sharedlib/spng/cmake_install.cmake",
+		"/home/cat/gsb/uid3606/build/src/md5/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

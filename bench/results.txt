@@ -1,0 +1,68 @@
+image=smooth_444.jpg jpeg=506KB full=4032x3024
+full decode: time=76.04ms internal_peak=18KB output=35721KB
+--- 1/2  dct_out=2016x1512 ref=2016x1512 ---
+  time: dct=39.01ms  full+box=120.38ms (avg of 5)
+  memory total_peak: dct=8948KB (internal 18 + output 8930) | full=35739KB (internal 18 + output 35721) | ratio=25.0%
+  pixel diff vs full+box: max=2 mean=0.041 ndiff=376266/9144576 psnr=61.94dB
+  pixel diff vs full+point: max=3 mean=0.050 ndiff=384839/9144576 psnr=60.02dB
+--- 1/4  dct_out=1008x756 ref=1008x756 ---
+  time: dct=26.23ms  full+box=85.70ms (avg of 5)
+  memory total_peak: dct=2250KB (internal 18 + output 2232) | full=35739KB (internal 18 + output 35721) | ratio=6.3%
+  pixel diff vs full+box: max=2 mean=0.060 ndiff=136896/2286144 psnr=60.35dB
+  pixel diff vs full+point: max=3 mean=0.143 ndiff=281834/2286144 psnr=55.46dB
+--- 1/8  dct_out=504x378 ref=504x378 ---
+  time: dct=25.91ms  full+box=113.94ms (avg of 5)
+  memory total_peak: dct=576KB (internal 18 + output 558) | full=35739KB (internal 18 + output 35721) | ratio=1.6%
+  pixel diff vs full+box: max=2 mean=0.146 ndiff=82865/571536 psnr=56.45dB
+  pixel diff vs full+point: max=6 mean=0.408 ndiff=183557/571536 psnr=50.06dB
+image=smooth_420.jpg jpeg=327KB full=4032x3024
+full decode: time=126.86ms internal_peak=18KB output=35721KB
+--- 1/2  dct_out=2016x1512 ref=2016x1512 ---
+  time: dct=29.76ms  full+box=159.67ms (avg of 5)
+  memory total_peak: dct=8948KB (internal 18 + output 8930) | full=35739KB (internal 18 + output 35721) | ratio=25.0%
+  pixel diff vs full+box: max=2 mean=0.018 ndiff=162584/9144576 psnr=65.62dB
+  pixel diff vs full+point: max=3 mean=0.025 ndiff=224709/9144576 psnr=64.05dB
+--- 1/4  dct_out=1008x756 ref=1008x756 ---
+  time: dct=13.00ms  full+box=82.95ms (avg of 5)
+  memory total_peak: dct=2250KB (internal 18 + output 2232) | full=35739KB (internal 18 + output 35721) | ratio=6.3%
+  pixel diff vs full+box: max=2 mean=0.070 ndiff=157777/2286144 psnr=59.59dB
+  pixel diff vs full+point: max=3 mean=0.117 ndiff=245137/2286144 psnr=56.81dB
+--- 1/8  dct_out=504x378 ref=504x378 ---
+  time: dct=8.42ms  full+box=80.13ms (avg of 5)
+  memory total_peak: dct=576KB (internal 18 + output 558) | full=35739KB (internal 18 + output 35721) | ratio=1.6%
+  pixel diff vs full+box: max=2 mean=0.064 ndiff=36721/571536 psnr=60.05dB
+  pixel diff vs full+point: max=4 mean=0.331 ndiff=167122/571536 psnr=51.95dB
+image=texture_444.jpg jpeg=7461KB full=4032x3024
+full decode: time=147.67ms internal_peak=18KB output=35721KB
+--- 1/2  dct_out=2016x1512 ref=2016x1512 ---
+  time: dct=77.86ms  full+box=171.78ms (avg of 5)
+  memory total_peak: dct=8948KB (internal 18 + output 8930) | full=35739KB (internal 18 + output 35721) | ratio=25.0%
+  pixel diff vs full+box: max=3 mean=0.464 ndiff=4069601/9144576 psnr=51.13dB
+  pixel diff vs full+point: max=54 mean=16.905 ndiff=9020489/9144576 psnr=22.10dB
+--- 1/4  dct_out=1008x756 ref=1008x756 ---
+  time: dct=58.13ms  full+box=157.25ms (avg of 5)
+  memory total_peak: dct=2250KB (internal 18 + output 2232) | full=35739KB (internal 18 + output 35721) | ratio=6.3%
+  pixel diff vs full+box: max=2 mean=0.416 ndiff=932989/2286144 psnr=51.79dB
+  pixel diff vs full+point: max=120 mean=43.041 ndiff=2274089/2286144 psnr=14.14dB
+--- 1/8  dct_out=504x378 ref=504x378 ---
+  time: dct=44.84ms  full+box=154.68ms (avg of 5)
+  memory total_peak: dct=576KB (internal 18 + output 558) | full=35739KB (internal 18 + output 35721) | ratio=1.6%
+  pixel diff vs full+box: max=2 mean=0.411 ndiff=230956/571536 psnr=51.85dB
+  pixel diff vs full+point: max=124 mean=52.882 ndiff=569177/571536 psnr=12.53dB
+image=texture_420.jpg jpeg=4608KB full=4032x3024
+full decode: time=111.21ms internal_peak=18KB output=35721KB
+--- 1/2  dct_out=2016x1512 ref=2016x1512 ---
+  time: dct=53.96ms  full+box=141.58ms (avg of 5)
+  memory total_peak: dct=8948KB (internal 18 + output 8930) | full=35739KB (internal 18 + output 35721) | ratio=25.0%
+  pixel diff vs full+box: max=34 mean=7.867 ndiff=8747565/9144576 psnr=28.25dB
+  pixel diff vs full+point: max=57 mean=15.786 ndiff=8990090/9144576 psnr=22.65dB
+--- 1/4  dct_out=1008x756 ref=1008x756 ---
+  time: dct=36.26ms  full+box=124.01ms (avg of 5)
+  memory total_peak: dct=2250KB (internal 18 + output 2232) | full=35739KB (internal 18 + output 35721) | ratio=6.3%
+  pixel diff vs full+box: max=22 mean=5.445 ndiff=2144780/2286144 psnr=31.45dB
+  pixel diff vs full+point: max=115 mean=37.751 ndiff=2272686/2286144 psnr=15.31dB
+--- 1/8  dct_out=504x378 ref=504x378 ---
+  time: dct=31.77ms  full+box=124.50ms (avg of 5)
+  memory total_peak: dct=576KB (internal 18 + output 558) | full=35739KB (internal 18 + output 35721) | ratio=1.6%
+  pixel diff vs full+box: max=8 mean=1.588 ndiff=453751/571536 psnr=41.87dB
+  pixel diff vs full+point: max=112 mean=47.161 ndiff=568264/571536 psnr=13.44dB

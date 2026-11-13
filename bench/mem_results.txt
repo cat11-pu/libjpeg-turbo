@@ -1,0 +1,36 @@
+================ smooth_444.jpg ================
+MALLOC_PEAK_KB=36346 LIVE_KB=4 mode=full out=4032x3024 output_bytes=36578304 
+MALLOC_PEAK_KB=9483 LIVE_KB=4 mode=1/2 out=2016x1512 output_bytes=9144576 
+MALLOC_PEAK_KB=2769 LIVE_KB=4 mode=1/4 out=1008x756 output_bytes=2286144 
+MALLOC_PEAK_KB=1089 LIVE_KB=4 mode=1/8 out=504x378 output_bytes=571536 
+MALLOC_PEAK_KB=134 LIVE_KB=4 mode=stream-full out=4032x3024 
+MALLOC_PEAK_KB=57 LIVE_KB=4 mode=stream-1/2 out=2016x1512 
+MALLOC_PEAK_KB=37 LIVE_KB=4 mode=stream-1/4 out=1008x756 
+MALLOC_PEAK_KB=31 LIVE_KB=4 mode=stream-1/8 out=504x378 
+================ smooth_420.jpg ================
+MALLOC_PEAK_KB=36211 LIVE_KB=4 mode=full out=4032x3024 output_bytes=36578304 
+MALLOC_PEAK_KB=9326 LIVE_KB=4 mode=1/2 out=2016x1512 output_bytes=9144576 
+MALLOC_PEAK_KB=2595 LIVE_KB=4 mode=1/4 out=1008x756 output_bytes=2286144 
+MALLOC_PEAK_KB=910 LIVE_KB=4 mode=1/8 out=504x378 output_bytes=571536 
+MALLOC_PEAK_KB=180 LIVE_KB=4 mode=stream-full out=4032x3024 
+MALLOC_PEAK_KB=81 LIVE_KB=4 mode=stream-1/2 out=2016x1512 
+MALLOC_PEAK_KB=42 LIVE_KB=4 mode=stream-1/4 out=1008x756 
+MALLOC_PEAK_KB=32 LIVE_KB=4 mode=stream-1/8 out=504x378 
+================ texture_444.jpg ================
+MALLOC_PEAK_KB=43302 LIVE_KB=4 mode=full out=4032x3024 output_bytes=36578304 
+MALLOC_PEAK_KB=16439 LIVE_KB=4 mode=1/2 out=2016x1512 output_bytes=9144576 
+MALLOC_PEAK_KB=9725 LIVE_KB=4 mode=1/4 out=1008x756 output_bytes=2286144 
+MALLOC_PEAK_KB=8045 LIVE_KB=4 mode=1/8 out=504x378 output_bytes=571536 
+MALLOC_PEAK_KB=134 LIVE_KB=4 mode=stream-full out=4032x3024 
+MALLOC_PEAK_KB=57 LIVE_KB=4 mode=stream-1/2 out=2016x1512 
+MALLOC_PEAK_KB=37 LIVE_KB=4 mode=stream-1/4 out=1008x756 
+MALLOC_PEAK_KB=31 LIVE_KB=4 mode=stream-1/8 out=504x378 
+================ texture_420.jpg ================
+MALLOC_PEAK_KB=40495 LIVE_KB=4 mode=full out=4032x3024 output_bytes=36578304 
+MALLOC_PEAK_KB=13610 LIVE_KB=4 mode=1/2 out=2016x1512 output_bytes=9144576 
+MALLOC_PEAK_KB=6879 LIVE_KB=4 mode=1/4 out=1008x756 output_bytes=2286144 
+MALLOC_PEAK_KB=5194 LIVE_KB=4 mode=1/8 out=504x378 output_bytes=571536 
+MALLOC_PEAK_KB=180 LIVE_KB=4 mode=stream-full out=4032x3024 
+MALLOC_PEAK_KB=81 LIVE_KB=4 mode=stream-1/2 out=2016x1512 
+MALLOC_PEAK_KB=42 LIVE_KB=4 mode=stream-1/4 out=1008x756 
+MALLOC_PEAK_KB=32 LIVE_KB=4 mode=stream-1/8 out=504x378 
