@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/tjtran.dir/link.d CMakeFiles/tjtran.dir/src/tjtran.c.o -o tjtran  -Wl,-rpath,/home/cat/gsb/uid3604/build-fix libturbojpeg.so.0.5.0

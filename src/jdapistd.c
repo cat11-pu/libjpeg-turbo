@@ -74,7 +74,7 @@ jpeg_start_decompress(j_decompress_ptr cinfo)
         if (cinfo->progress != NULL)
           (*cinfo->progress->progress_monitor) ((j_common_ptr)cinfo);
         /* Absorb some more input */
-        retcode = (*cinfo->inputctl->consume_input) (cinfo);
+        retcode = j_safe_consume_input(cinfo);
         if (retcode == JPEG_SUSPENDED)
           return FALSE;
         if (retcode == JPEG_REACHED_EOI)
@@ -809,7 +809,7 @@ jpeg_finish_output(j_decompress_ptr cinfo)
   /* Read markers looking for SOS or EOI */
   while (cinfo->input_scan_number <= cinfo->output_scan_number &&
          !cinfo->inputctl->eoi_reached) {
-    if ((*cinfo->inputctl->consume_input) (cinfo) == JPEG_SUSPENDED)
+    if (j_safe_consume_input(cinfo) == JPEG_SUSPENDED)
       return FALSE;             /* Suspend, come back later */
   }
   cinfo->global_state = DSTATE_BUFIMAGE;

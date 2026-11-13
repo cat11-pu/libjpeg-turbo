@@ -216,6 +216,8 @@ JMESSAGE(JERR_BAD_DROP_SAMPLING,
 #endif
 JMESSAGE(JERR_BAD_RESTART,
          "Invalid restart interval %d; must be an integer multiple of the number of MCUs in an MCU row (%d)")
+JMESSAGE(JWRN_SKIP_SCAN,
+         "Corrupt JPEG data: discarding scan %d and resynchronizing")
 
 #ifdef JMAKE_ENUM_LIST
 

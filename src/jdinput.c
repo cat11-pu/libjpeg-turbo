@@ -22,6 +22,7 @@
 #include "jinclude.h"
 #include "jpeglib.h"
 #include "jpegapicomp.h"
+#include <setjmp.h>
 
 
 /* Private state */
@@ -30,6 +31,9 @@ typedef struct {
   struct jpeg_input_controller pub; /* public fields */
 
   boolean inheaders;            /* TRUE until first SOS is reached */
+  boolean in_scan;              /* TRUE while consuming a scan's entropy data */
+  jmp_buf scan_err_jmp;         /* setjmp buffer for scan error recovery */
+  void (*saved_error_exit) (j_common_ptr cinfo); /* application's error_exit */
 } my_input_controller;
 
 typedef my_input_controller *my_inputctl_ptr;
@@ -295,12 +299,15 @@ latch_quant_tables(j_decompress_ptr cinfo)
 METHODDEF(void)
 start_input_pass(j_decompress_ptr cinfo)
 {
+  my_inputctl_ptr inputctl = (my_inputctl_ptr)cinfo->inputctl;
+
   per_scan_setup(cinfo);
   if (!cinfo->master->lossless)
     latch_quant_tables(cinfo);
   (*cinfo->entropy->start_pass) (cinfo);
   (*cinfo->coef->start_input_pass) (cinfo);
   cinfo->inputctl->consume_input = cinfo->coef->consume_data;
+  inputctl->in_scan = TRUE;
 }
 
 
@@ -313,7 +320,175 @@ start_input_pass(j_decompress_ptr cinfo)
 METHODDEF(void)
 finish_input_pass(j_decompress_ptr cinfo)
 {
+  my_inputctl_ptr inputctl = (my_inputctl_ptr)cinfo->inputctl;
+
+  inputctl->in_scan = FALSE;
   cinfo->inputctl->consume_input = consume_markers;
+}
+
+
+/*
+ * Scan-level error recovery for progressive multi-scan files.
+ *
+ * j_safe_consume_input() wraps the input controller's consume_input method
+ * with a setjmp() recovery point.  If a fatal error occurs while reading a
+ * scan or an inter-scan marker segment of a progressive file, the partially
+ * decoded scan is discarded and decoding resumes at the next marker, so a
+ * single corrupt scan costs only that scan instead of the whole image.
+ */
+
+METHODDEF(void)
+scan_error_exit(j_common_ptr cinfo)
+/* Replacement error_exit that is in effect only while input is being
+ * consumed under the protection of j_safe_consume_input().  It reports the
+ * error and then longjmps back to the recovery point instead of aborting
+ * decompression.
+ */
+{
+  j_decompress_ptr dinfo = (j_decompress_ptr)cinfo;
+  my_inputctl_ptr inputctl = (my_inputctl_ptr)dinfo->inputctl;
+
+  /* Display the error message, then bail out to the recovery point. */
+  (*cinfo->err->output_message)(cinfo);
+  longjmp(inputctl->scan_err_jmp, 1);
+}
+
+
+LOCAL(boolean)
+resync_to_marker(j_decompress_ptr cinfo)
+/* Skip over the remainder of a corrupt data segment until a marker is
+ * found, and leave that marker in cinfo->unread_marker.  Returns FALSE if
+ * the data source suspends, in which case recovery is impossible.
+ */
+{
+  int c;
+
+  for (;;) {
+    if (cinfo->src->bytes_in_buffer == 0) {
+      if (!(*cinfo->src->fill_input_buffer)(cinfo))
+        return FALSE;           /* suspending source: can't recover */
+    }
+    cinfo->src->bytes_in_buffer--;
+    c = *cinfo->src->next_input_byte++;
+    if (c != 0xFF)
+      continue;                 /* skip non-marker byte */
+    /* Skip any fill bytes and examine the marker code. */
+    do {
+      if (cinfo->src->bytes_in_buffer == 0) {
+        if (!(*cinfo->src->fill_input_buffer)(cinfo))
+          return FALSE;
+      }
+      cinfo->src->bytes_in_buffer--;
+      c = *cinfo->src->next_input_byte++;
+    } while (c == 0xFF);
+    if (c == 0x00)
+      continue;                 /* stuffed 0xFF data byte */
+    if (c >= 0xD0 && c <= 0xD7)
+      continue;                 /* stray restart marker: keep looking */
+    cinfo->unread_marker = c;   /* found the next real marker */
+    return TRUE;
+  }
+}
+
+
+LOCAL(void)
+zero_scan_coefficients(j_decompress_ptr cinfo)
+/* Zero out the coefficients that a failed first (non-refinement) scan would
+ * have contributed, so that the scan is effectively dropped rather than
+ * partially applied.
+ */
+{
+  int ci, coef;
+  JDIMENSION blk_x, blk_y;
+  jpeg_component_info *compptr;
+  JBLOCKARRAY buffer;
+
+  if (cinfo->coef == NULL || cinfo->Ss > cinfo->Se ||
+      cinfo->Se >= DCTSIZE2 || cinfo->comps_in_scan < 1)
+    return;
+
+  for (ci = 0; ci < cinfo->comps_in_scan; ci++) {
+    compptr = cinfo->cur_comp_info[ci];
+    if (compptr == NULL)
+      continue;
+    for (blk_y = 0; blk_y < compptr->height_in_blocks; blk_y++) {
+      buffer = (*cinfo->mem->access_virt_barray)
+        ((j_common_ptr)cinfo,
+         cinfo->coef->coef_arrays[compptr->component_index],
+         blk_y, (JDIMENSION)1, TRUE);
+      for (blk_x = 0; blk_x < compptr->width_in_blocks; blk_x++)
+        for (coef = cinfo->Ss; coef <= cinfo->Se; coef++)
+          buffer[0][blk_x][coef] = 0;
+    }
+  }
+}
+
+
+LOCAL(void)
+recover_from_scan_error(j_decompress_ptr cinfo)
+/* Invoked from j_safe_consume_input() when a fatal error was trapped while
+ * reading a progressive scan.  Drop the partial scan and resynchronize the
+ * datastream at the next marker.
+ */
+{
+  my_inputctl_ptr inputctl = (my_inputctl_ptr)cinfo->inputctl;
+
+  /* Report the lost scan.  Bypass emit_message() so that the message is
+   * shown even if a warning was already emitted, since losing a scan is
+   * more significant than an ordinary corrupt-data warning.
+   */
+  cinfo->err->msg_code = JWRN_SKIP_SCAN;
+  cinfo->err->msg_parm.i[0] = cinfo->input_scan_number;
+  (*cinfo->err->output_message)((j_common_ptr)cinfo);
+  cinfo->err->num_warnings++;
+
+  /* If the error occurred in the middle of a first (non-refinement) scan,
+   * discard the coefficients it partially decoded.  (A refinement scan only
+   * flips low-order coefficient bits, so its partial data is harmless.)
+   */
+  if (inputctl->in_scan && cinfo->Ah == 0)
+    zero_scan_coefficients(cinfo);
+  inputctl->in_scan = FALSE;
+
+  /* Skip the remainder of the corrupt segment and resume at the next
+   * marker.  unread_marker may still reference the offending marker
+   * segment, so discard it first.
+   */
+  cinfo->unread_marker = 0;
+  if (!resync_to_marker(cinfo)) {
+    /* Can't recover with a suspending data source: re-throw the error. */
+    (*inputctl->saved_error_exit)((j_common_ptr)cinfo);
+  }
+  inputctl->pub.consume_input = consume_markers;
+}
+
+
+GLOBAL(int)
+j_safe_consume_input(j_decompress_ptr cinfo)
+/* Wrapper around the input controller's consume_input method that recovers
+ * from corrupt scans in progressive files: a damaged scan is discarded and
+ * decoding resumes at the next scan, instead of failing the whole
+ * decompression.
+ */
+{
+  my_inputctl_ptr inputctl = (my_inputctl_ptr)cinfo->inputctl;
+  int retcode;
+
+  /* Recovery is only possible once we have a valid SOF and first SOS. */
+  if (!cinfo->progressive_mode || inputctl->inheaders)
+    return (*cinfo->inputctl->consume_input)(cinfo);
+
+  inputctl->saved_error_exit = cinfo->err->error_exit;
+  cinfo->err->error_exit = scan_error_exit;
+  if (setjmp(inputctl->scan_err_jmp)) {
+    /* Trapped a fatal error: recover, then tell the caller to keep going. */
+    cinfo->err->error_exit = inputctl->saved_error_exit;
+    recover_from_scan_error(cinfo);
+    return JPEG_REACHED_SOS;
+  }
+  retcode = (*cinfo->inputctl->consume_input)(cinfo);
+  cinfo->err->error_exit = inputctl->saved_error_exit;
+  return retcode;
 }
 
 
@@ -387,6 +562,7 @@ reset_input_controller(j_decompress_ptr cinfo)
   inputctl->pub.has_multiple_scans = FALSE; /* "unknown" would be better */
   inputctl->pub.eoi_reached = FALSE;
   inputctl->inheaders = TRUE;
+  inputctl->in_scan = FALSE;
   /* Reset other modules */
   (*cinfo->err->reset_error_mgr) ((j_common_ptr)cinfo);
   (*cinfo->marker->reset_marker_reader) (cinfo);
@@ -421,4 +597,5 @@ jinit_input_controller(j_decompress_ptr cinfo)
   inputctl->pub.has_multiple_scans = FALSE; /* "unknown" would be better */
   inputctl->pub.eoi_reached = FALSE;
   inputctl->inheaders = TRUE;
+  inputctl->in_scan = FALSE;
 }

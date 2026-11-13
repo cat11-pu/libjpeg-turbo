@@ -64,7 +64,7 @@ jpeg_read_coefficients(j_decompress_ptr cinfo)
       if (cinfo->progress != NULL)
         (*cinfo->progress->progress_monitor) ((j_common_ptr)cinfo);
       /* Absorb some more input */
-      retcode = (*cinfo->inputctl->consume_input) (cinfo);
+      retcode = j_safe_consume_input(cinfo);
       if (retcode == JPEG_SUSPENDED)
         return NULL;
       if (retcode == JPEG_REACHED_EOI)

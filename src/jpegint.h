@@ -603,6 +603,7 @@ EXTERN(void) jinit_d_post_controller(j_decompress_ptr cinfo,
 EXTERN(void) j12init_d_post_controller(j_decompress_ptr cinfo,
                                        boolean need_full_buffer);
 EXTERN(void) jinit_input_controller(j_decompress_ptr cinfo);
+EXTERN(int) j_safe_consume_input(j_decompress_ptr cinfo);
 EXTERN(void) jinit_marker_reader(j_decompress_ptr cinfo);
 EXTERN(void) jinit_huff_decoder(j_decompress_ptr cinfo);
 EXTERN(void) jinit_phuff_decoder(j_decompress_ptr cinfo);
