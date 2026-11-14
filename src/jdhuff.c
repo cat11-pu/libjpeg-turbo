@@ -388,6 +388,12 @@ no_more_bytes:
    handle markers.  We have to hand off any blocks with markers to the
    slower routines. */
 
+#if defined(_MSC_VER)
+#define JPEG_BSWAP64(x)  ((bit_buf_type)_byteswap_uint64((unsigned __int64)(x)))
+#else
+#define JPEG_BSWAP64(x)  ((bit_buf_type)__builtin_bswap64((x)))
+#endif
+
 #define GET_BYTE { \
   register int c0, c1; \
   c0 = *buffer++; \
@@ -413,7 +419,25 @@ no_more_bytes:
 /* Pre-fetch 48 bytes, because the holding register is 64-bit */
 #define FILL_BIT_BUFFER_FAST \
   if (bits_left <= 16) { \
-    GET_BYTE GET_BYTE GET_BYTE GET_BYTE GET_BYTE GET_BYTE \
+    /* Fast bulk path: load 8 bytes at once.  When none of the 6 consumed \
+     * bytes is 0xFF (the overwhelmingly common case), merge them in a \
+     * straight-line sequence with no per-byte branches.  If any 0xFF is \
+     * present, fall back to the byte-at-a-time macro so that byte stuffing \
+     * and markers are handled exactly as before. */ \
+    size_t _ffw; \
+    memcpy(&_ffw, buffer, sizeof(_ffw)); \
+    { \
+      size_t _inv = ~_ffw; \
+      if (!((_inv - 0x0101010101010101ULL) & ~_inv & \
+            0x8080808080808080ULL)) { \
+        get_buffer = (get_buffer << 48) | \
+          (JPEG_BSWAP64(_ffw) >> 16); \
+        buffer += 6; \
+        bits_left += 48; \
+      } else { \
+        GET_BYTE GET_BYTE GET_BYTE GET_BYTE GET_BYTE GET_BYTE \
+      } \
+    } \
   }
 
 #else
@@ -425,6 +449,37 @@ no_more_bytes:
   }
 
 #endif
+
+/* Out-of-line slow path for HUFF_DECODE_FAST().  Only reached for codes
+ * longer than HUFF_LOOKAHEAD bits (well under 2% of symbols on typical
+ * JPEG streams).  Keeping this cold logic out of the hot inner loop shrinks
+ * the decoder's footprint, improving instruction-cache utilization and branch
+ * layout.  It performs exactly the same long-code walk that the inline macro
+ * used, so decoded coefficients are bit-for-bit identical.  The updated
+ * bit-holding register and remaining-bit count are returned through pointers.
+ */
+GLOBAL(int) __attribute__((noinline, cold))
+huff_decode_slow(register bit_buf_type get_buffer, register int bits_left,
+                 d_derived_tbl *htbl, int nb,
+                 bit_buf_type *out_buffer, int *out_bits_left)
+{
+  register int s;
+
+  s = (int)((get_buffer >> bits_left) & (((bit_buf_type)1 << nb) - 1));
+  while (s > htbl->maxcode[nb]) {
+    s <<= 1;
+    bits_left--;
+    s |= (int)((get_buffer >> bits_left) & 1);
+    nb++;
+  }
+
+  *out_buffer = get_buffer;
+  *out_bits_left = bits_left;
+
+  if (nb > 16)
+    return 0;
+  return htbl->pub->huffval[(int)(s + htbl->valoffset[nb]) & 0xFF];
+}
 
 
 /*

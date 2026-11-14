@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/simdcoverage.dir/link.d CMakeFiles/simdcoverage.dir/simdcoverage.c.o -o simdcoverage  ../libjpeg.a

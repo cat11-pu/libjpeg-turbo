@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/jcstest.dir/link.d CMakeFiles/jcstest.dir/__/src/jcstest.c.o -o ../jcstest  -Wl,-rpath,/home/cat/gsb/uid3605/build-base ../libjpeg.so.8.3.2

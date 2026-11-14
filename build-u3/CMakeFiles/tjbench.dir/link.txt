@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG -fprofile-use=/home/cat/gsb/uid3605/pgo3 -fprofile-correction -Wno-error=coverage-mismatch -Wl,--dependency-file=CMakeFiles/tjbench.dir/link.d CMakeFiles/tjbench.dir/src/tjbench.c.o CMakeFiles/tjbench.dir/src/tjutil.c.o -o tjbench  -Wl,-rpath,/home/cat/gsb/uid3605/build-u3: libturbojpeg.so.0.5.0 -lm

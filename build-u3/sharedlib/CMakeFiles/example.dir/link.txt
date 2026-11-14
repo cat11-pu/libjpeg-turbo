@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG -fprofile-use=/home/cat/gsb/uid3605/pgo3 -fprofile-correction -Wno-error=coverage-mismatch -Wl,--dependency-file=CMakeFiles/example.dir/link.d CMakeFiles/example.dir/__/src/example.c.o -o ../example  -Wl,-rpath,/home/cat/gsb/uid3605/build-u3 ../libjpeg.so.8.3.2

@@ -1,0 +1,78 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: nasm
+Upstream-Contact: H. Peter Anvin (Intel) <hpa@zytor.com>
+Source: https://github.com/netwide-assembler/nasm
+
+Files: *
+Copyright: Copyright 1996-2025 the NASM Authors
+           copyright (C) 1996 Simon Tatham and Julian Hall
+           Copyright (C) 1999 by Andrew Zabolotny
+           Copyright (C) 1991-1998 SciTech Software, Inc.
+           Copyright 1996-2010 The NASM Authors
+           Copyright 1998-2003, O'Reilly & Associates
+           Copyright (c) 1996,99 Julian Hall. All rights reserved.
+           Copyright (c) 2002 RET & COM Research.
+           Copyright (C) 1998-2000 by DooM Legacy Team.
+           copyright (C) 1998 John S. Fine
+License: BSD-2-clause
+
+License: BSD-2-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following
+ conditions are met:
+ .
+ * Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+ * Redistributions in binary form must reproduce the above
+   copyright notice, this list of conditions and the following
+   disclaimer in the documentation and/or other materials provided
+   with the distribution.
+ .
+   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+   CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+   INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+   MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+   DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+   CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+   SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+   NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+   LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+   HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+   OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+   EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Files: debian/*
+Copyright: (C) 1996-1999 Vincent Renardias <vincent@debian.org>
+           (C) 1999-2001 Matej Vela <vela@debian.org>
+           (C) 2001 Ivo Timmermans <ivo@debian.org>
+           (C) 2002-2004 Christian Kesselheim <ckesselh@debian.org>
+           (C) 2007-2016 Joey Hess <joeyh@debian.org>
+           (C) 2007-2016 Anibal Monsalve Salazar <anibal@debian.org>
+           (C) 2016-2025 Jordan Justen <jljusten@debian.org>
+License: GPL-2
+
+License: GPL-2
+ On Debian systems, the complete text of the GNU General Public License
+ can be found in /usr/share/common-licenses/GPL-2.
+
+Files: zlib/*
+Copyright: (C) 1995-2022 Jean-loup Gailly and Mark Adler
+License: zlib
+
+License: zlib
+ This software is provided 'as-is', without any express or implied
+ warranty.  In no event will the authors be held liable for any damages
+ arising from the use of this software.
+ .
+ Permission is granted to anyone to use this software for any purpose,
+ including commercial applications, and to alter it and redistribute it
+ freely, subject to the following restrictions:
+ .
+ 1. The origin of this software must not be misrepresented; you must not
+    claim that you wrote the original software. If you use this software
+    in a product, an acknowledgment in the product documentation would be
+    appreciated but is not required.
+ 2. Altered source versions must be plainly marked as such, and must not be
+    misrepresented as being the original software.
+ 3. This notice may not be removed or altered from any source distribution.

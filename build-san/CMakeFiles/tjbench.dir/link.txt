@@ -1,0 +1,1 @@
+/usr/bin/cc -fsanitize=address,undefined -fno-sanitize-recover=all -O1 -g -g -fsanitize=address,undefined -Wl,--dependency-file=CMakeFiles/tjbench.dir/link.d CMakeFiles/tjbench.dir/src/tjbench.c.o CMakeFiles/tjbench.dir/src/tjutil.c.o -o tjbench  -Wl,-rpath,/home/cat/gsb/uid3605/build-san: libturbojpeg.so.0.5.0 -lm

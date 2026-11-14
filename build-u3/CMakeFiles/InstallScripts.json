@@ -1,0 +1,12 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/cat/gsb/uid3605/build-u3/cmake_install.cmake",
+		"/home/cat/gsb/uid3605/build-u3/simd/cmake_install.cmake",
+		"/home/cat/gsb/uid3605/build-u3/src/spng/cmake_install.cmake",
+		"/home/cat/gsb/uid3605/build-u3/sharedlib/cmake_install.cmake",
+		"/home/cat/gsb/uid3605/build-u3/sharedlib/spng/cmake_install.cmake",
+		"/home/cat/gsb/uid3605/build-u3/src/md5/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

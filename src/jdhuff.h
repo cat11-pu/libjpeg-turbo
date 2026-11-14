@@ -229,18 +229,12 @@ slowlabel: \
   DROP_BITS(nb); \
   s = s & ((1 << HUFF_LOOKAHEAD) - 1); \
   if (nb > HUFF_LOOKAHEAD) { \
-    /* Equivalent of jpeg_huff_decode() */ \
-    /* Don't use GET_BITS() here because we don't want to modify bits_left */ \
-    s = (get_buffer >> bits_left) & ((1 << (nb)) - 1); \
-    while (s > htbl->maxcode[nb]) { \
-      s <<= 1; \
-      s |= GET_BITS(1); \
-      nb++; \
-    } \
-    if (nb > 16) \
-      s = 0; \
-    else \
-      s = htbl->pub->huffval[(int)(s + htbl->valoffset[nb]) & 0xFF]; \
+    bit_buf_type _slow_buf; \
+    int _slow_bits; \
+    s = huff_decode_slow(get_buffer, bits_left, htbl, nb, \
+                         &_slow_buf, &_slow_bits); \
+    get_buffer = _slow_buf; \
+    bits_left = _slow_bits; \
   }
 
 /* Out-of-line case for Huffman code fetching */
@@ -248,3 +242,11 @@ EXTERN(int) jpeg_huff_decode(bitread_working_state *state,
                              register bit_buf_type get_buffer,
                              register int bits_left, d_derived_tbl *htbl,
                              int min_bits);
+
+/* Cold out-of-line slow path used by HUFF_DECODE_FAST when a code is longer
+ * than HUFF_LOOKAHEAD bits.  Defined in jdhuff.c.
+ */
+EXTERN(int) huff_decode_slow(register bit_buf_type get_buffer,
+                             register int bits_left, d_derived_tbl *htbl,
+                             int nb, bit_buf_type *out_buffer,
+                             int *out_bits_left);

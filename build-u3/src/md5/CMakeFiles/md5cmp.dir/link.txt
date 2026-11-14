@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG -fprofile-use=/home/cat/gsb/uid3605/pgo3 -fprofile-correction -Wno-error=coverage-mismatch -Wl,--dependency-file=CMakeFiles/md5cmp.dir/link.d CMakeFiles/md5cmp.dir/md5cmp.c.o CMakeFiles/md5cmp.dir/md5.c.o CMakeFiles/md5cmp.dir/md5hl.c.o -o ../../test/md5cmp
