@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/cat/gsb/uid4102/build-prop-asan/cmake_install.cmake",
+		"/home/cat/gsb/uid4102/build-prop-asan/src/spng/cmake_install.cmake",
+		"/home/cat/gsb/uid4102/build-prop-asan/sharedlib/cmake_install.cmake",
+		"/home/cat/gsb/uid4102/build-prop-asan/sharedlib/spng/cmake_install.cmake",
+		"/home/cat/gsb/uid4102/build-prop-asan/src/md5/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
