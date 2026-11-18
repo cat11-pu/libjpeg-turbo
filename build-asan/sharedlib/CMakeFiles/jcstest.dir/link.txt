@@ -1,0 +1,1 @@
+/usr/bin/cc -fsanitize=address,undefined -fno-omit-frame-pointer -g -Wl,--dependency-file=CMakeFiles/jcstest.dir/link.d CMakeFiles/jcstest.dir/__/src/jcstest.c.o -o ../jcstest  -Wl,-rpath,/home/cat/gsb/uid4101/build-asan ../libjpeg.so.8.3.2

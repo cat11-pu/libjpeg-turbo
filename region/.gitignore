@@ -1,0 +1,5 @@
+*.o
+rdec
+rdec_test
+jpgs/
+asan_results.txt

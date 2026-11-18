@@ -1,0 +1,2408 @@
+====================================================================
+image: jpgs/gray.jpg (jpgs/gray.jpg)
+====================================================================
+-- scale 1/8  RGB   nosmooth  (scaled size 16x12)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+  [PASS  ] error case zero width                   -> invalid argument
+  [PASS  ] error case zero height                  -> invalid argument
+  [PASS  ] error case rectangle past right edge    -> crop rectangle outside scaled image
+  [PASS  ] error case rectangle past bottom edge   -> crop rectangle outside scaled image
+  [PASS  ] error case x beyond image               -> crop rectangle outside scaled image
+  [PASS  ] error case bad scale numerator          -> unsupported DCT scaling factor
+  [PASS  ] error case non-DCT denominator          -> unsupported DCT scaling factor
+  [PASS  ] error case bad format enum              -> invalid argument
+-- scale 1/8  RGB   fancy     (scaled size 16x12)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 1/8  GRAY  nosmooth  (scaled size 16x12)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 1/8  GRAY  fancy     (scaled size 16x12)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 2/8  RGB   nosmooth  (scaled size 32x24)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 2/8  RGB   fancy     (scaled size 32x24)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 2/8  GRAY  nosmooth  (scaled size 32x24)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 2/8  GRAY  fancy     (scaled size 32x24)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 3/8  RGB   nosmooth  (scaled size 48x36)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 3/8  RGB   fancy     (scaled size 48x36)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 3/8  GRAY  nosmooth  (scaled size 48x36)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 3/8  GRAY  fancy     (scaled size 48x36)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 4/8  RGB   nosmooth  (scaled size 64x48)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 4/8  RGB   fancy     (scaled size 64x48)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 4/8  GRAY  nosmooth  (scaled size 64x48)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 4/8  GRAY  fancy     (scaled size 64x48)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 5/8  RGB   nosmooth  (scaled size 80x60)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 5/8  RGB   fancy     (scaled size 80x60)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 5/8  GRAY  nosmooth  (scaled size 80x60)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 5/8  GRAY  fancy     (scaled size 80x60)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 6/8  RGB   nosmooth  (scaled size 96x72)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 6/8  RGB   fancy     (scaled size 96x72)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 6/8  GRAY  nosmooth  (scaled size 96x72)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 6/8  GRAY  fancy     (scaled size 96x72)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 7/8  RGB   nosmooth  (scaled size 112x84)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 7/8  RGB   fancy     (scaled size 112x84)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 7/8  GRAY  nosmooth  (scaled size 112x84)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 7/8  GRAY  fancy     (scaled size 112x84)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 8/8  RGB   nosmooth  (scaled size 128x95)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 8/8  RGB   fancy     (scaled size 128x95)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 8/8  GRAY  nosmooth  (scaled size 128x95)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 8/8  GRAY  fancy     (scaled size 128x95)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+
+====================================================================
+image: jpgs/420.jpg (jpgs/420.jpg)
+====================================================================
+-- scale 1/8  RGB   nosmooth  (scaled size 16x12)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+  [PASS  ] error case zero width                   -> invalid argument
+  [PASS  ] error case zero height                  -> invalid argument
+  [PASS  ] error case rectangle past right edge    -> crop rectangle outside scaled image
+  [PASS  ] error case rectangle past bottom edge   -> crop rectangle outside scaled image
+  [PASS  ] error case x beyond image               -> crop rectangle outside scaled image
+  [PASS  ] error case bad scale numerator          -> unsupported DCT scaling factor
+  [PASS  ] error case non-DCT denominator          -> unsupported DCT scaling factor
+  [PASS  ] error case bad format enum              -> invalid argument
+-- scale 1/8  RGB   fancy     (scaled size 16x12)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 1/8  GRAY  nosmooth  (scaled size 16x12)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 1/8  GRAY  fancy     (scaled size 16x12)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 2/8  RGB   nosmooth  (scaled size 32x24)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 2/8  RGB   fancy     (scaled size 32x24)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 2/8  GRAY  nosmooth  (scaled size 32x24)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 2/8  GRAY  fancy     (scaled size 32x24)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 3/8  RGB   nosmooth  (scaled size 48x36)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 3/8  RGB   fancy     (scaled size 48x36)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 3/8  GRAY  nosmooth  (scaled size 48x36)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 3/8  GRAY  fancy     (scaled size 48x36)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 4/8  RGB   nosmooth  (scaled size 64x48)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 4/8  RGB   fancy     (scaled size 64x48)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 4/8  GRAY  nosmooth  (scaled size 64x48)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 4/8  GRAY  fancy     (scaled size 64x48)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 5/8  RGB   nosmooth  (scaled size 80x60)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 5/8  RGB   fancy     (scaled size 80x60)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 5/8  GRAY  nosmooth  (scaled size 80x60)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 5/8  GRAY  fancy     (scaled size 80x60)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 6/8  RGB   nosmooth  (scaled size 96x72)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 6/8  RGB   fancy     (scaled size 96x72)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 6/8  GRAY  nosmooth  (scaled size 96x72)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 6/8  GRAY  fancy     (scaled size 96x72)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 7/8  RGB   nosmooth  (scaled size 112x84)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 7/8  RGB   fancy     (scaled size 112x84)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 7/8  GRAY  nosmooth  (scaled size 112x84)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 7/8  GRAY  fancy     (scaled size 112x84)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 8/8  RGB   nosmooth  (scaled size 128x95)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 8/8  RGB   fancy     (scaled size 128x95)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 8/8  GRAY  nosmooth  (scaled size 128x95)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 8/8  GRAY  fancy     (scaled size 128x95)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+
+====================================================================
+image: jpgs/422.jpg (jpgs/422.jpg)
+====================================================================
+-- scale 1/8  RGB   nosmooth  (scaled size 16x12)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+  [PASS  ] error case zero width                   -> invalid argument
+  [PASS  ] error case zero height                  -> invalid argument
+  [PASS  ] error case rectangle past right edge    -> crop rectangle outside scaled image
+  [PASS  ] error case rectangle past bottom edge   -> crop rectangle outside scaled image
+  [PASS  ] error case x beyond image               -> crop rectangle outside scaled image
+  [PASS  ] error case bad scale numerator          -> unsupported DCT scaling factor
+  [PASS  ] error case non-DCT denominator          -> unsupported DCT scaling factor
+  [PASS  ] error case bad format enum              -> invalid argument
+-- scale 1/8  RGB   fancy     (scaled size 16x12)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 1/8  GRAY  nosmooth  (scaled size 16x12)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 1/8  GRAY  fancy     (scaled size 16x12)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 2/8  RGB   nosmooth  (scaled size 32x24)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 2/8  RGB   fancy     (scaled size 32x24)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 2/8  GRAY  nosmooth  (scaled size 32x24)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 2/8  GRAY  fancy     (scaled size 32x24)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 3/8  RGB   nosmooth  (scaled size 48x36)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 3/8  RGB   fancy     (scaled size 48x36)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 3/8  GRAY  nosmooth  (scaled size 48x36)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 3/8  GRAY  fancy     (scaled size 48x36)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 4/8  RGB   nosmooth  (scaled size 64x48)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 4/8  RGB   fancy     (scaled size 64x48)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 4/8  GRAY  nosmooth  (scaled size 64x48)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 4/8  GRAY  fancy     (scaled size 64x48)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 5/8  RGB   nosmooth  (scaled size 80x60)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 5/8  RGB   fancy     (scaled size 80x60)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 5/8  GRAY  nosmooth  (scaled size 80x60)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 5/8  GRAY  fancy     (scaled size 80x60)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 6/8  RGB   nosmooth  (scaled size 96x72)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 6/8  RGB   fancy     (scaled size 96x72)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 6/8  GRAY  nosmooth  (scaled size 96x72)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 6/8  GRAY  fancy     (scaled size 96x72)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 7/8  RGB   nosmooth  (scaled size 112x84)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 7/8  RGB   fancy     (scaled size 112x84)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 7/8  GRAY  nosmooth  (scaled size 112x84)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 7/8  GRAY  fancy     (scaled size 112x84)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 8/8  RGB   nosmooth  (scaled size 128x95)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 8/8  RGB   fancy     (scaled size 128x95)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 8/8  GRAY  nosmooth  (scaled size 128x95)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 8/8  GRAY  fancy     (scaled size 128x95)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+
+====================================================================
+image: jpgs/440.jpg (jpgs/440.jpg)
+====================================================================
+-- scale 1/8  RGB   nosmooth  (scaled size 16x12)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+  [PASS  ] error case zero width                   -> invalid argument
+  [PASS  ] error case zero height                  -> invalid argument
+  [PASS  ] error case rectangle past right edge    -> crop rectangle outside scaled image
+  [PASS  ] error case rectangle past bottom edge   -> crop rectangle outside scaled image
+  [PASS  ] error case x beyond image               -> crop rectangle outside scaled image
+  [PASS  ] error case bad scale numerator          -> unsupported DCT scaling factor
+  [PASS  ] error case non-DCT denominator          -> unsupported DCT scaling factor
+  [PASS  ] error case bad format enum              -> invalid argument
+-- scale 1/8  RGB   fancy     (scaled size 16x12)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 1/8  GRAY  nosmooth  (scaled size 16x12)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 1/8  GRAY  fancy     (scaled size 16x12)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 2/8  RGB   nosmooth  (scaled size 32x24)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 2/8  RGB   fancy     (scaled size 32x24)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 2/8  GRAY  nosmooth  (scaled size 32x24)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 2/8  GRAY  fancy     (scaled size 32x24)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 3/8  RGB   nosmooth  (scaled size 48x36)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 3/8  RGB   fancy     (scaled size 48x36)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 3/8  GRAY  nosmooth  (scaled size 48x36)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 3/8  GRAY  fancy     (scaled size 48x36)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 4/8  RGB   nosmooth  (scaled size 64x48)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 4/8  RGB   fancy     (scaled size 64x48)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 4/8  GRAY  nosmooth  (scaled size 64x48)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 4/8  GRAY  fancy     (scaled size 64x48)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 5/8  RGB   nosmooth  (scaled size 80x60)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 5/8  RGB   fancy     (scaled size 80x60)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 5/8  GRAY  nosmooth  (scaled size 80x60)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 5/8  GRAY  fancy     (scaled size 80x60)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 6/8  RGB   nosmooth  (scaled size 96x72)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 6/8  RGB   fancy     (scaled size 96x72)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 6/8  GRAY  nosmooth  (scaled size 96x72)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 6/8  GRAY  fancy     (scaled size 96x72)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 7/8  RGB   nosmooth  (scaled size 112x84)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 7/8  RGB   fancy     (scaled size 112x84)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 7/8  GRAY  nosmooth  (scaled size 112x84)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 7/8  GRAY  fancy     (scaled size 112x84)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 8/8  RGB   nosmooth  (scaled size 128x95)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 8/8  RGB   fancy     (scaled size 128x95)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 8/8  GRAY  nosmooth  (scaled size 128x95)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 8/8  GRAY  fancy     (scaled size 128x95)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+
+====================================================================
+image: jpgs/444.jpg (jpgs/444.jpg)
+====================================================================
+-- scale 1/8  RGB   nosmooth  (scaled size 16x12)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+  [PASS  ] error case zero width                   -> invalid argument
+  [PASS  ] error case zero height                  -> invalid argument
+  [PASS  ] error case rectangle past right edge    -> crop rectangle outside scaled image
+  [PASS  ] error case rectangle past bottom edge   -> crop rectangle outside scaled image
+  [PASS  ] error case x beyond image               -> crop rectangle outside scaled image
+  [PASS  ] error case bad scale numerator          -> unsupported DCT scaling factor
+  [PASS  ] error case non-DCT denominator          -> unsupported DCT scaling factor
+  [PASS  ] error case bad format enum              -> invalid argument
+-- scale 1/8  RGB   fancy     (scaled size 16x12)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 1/8  GRAY  nosmooth  (scaled size 16x12)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 1/8  GRAY  fancy     (scaled size 16x12)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 2/8  RGB   nosmooth  (scaled size 32x24)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 2/8  RGB   fancy     (scaled size 32x24)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 2/8  GRAY  nosmooth  (scaled size 32x24)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 2/8  GRAY  fancy     (scaled size 32x24)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 3/8  RGB   nosmooth  (scaled size 48x36)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 3/8  RGB   fancy     (scaled size 48x36)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 3/8  GRAY  nosmooth  (scaled size 48x36)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 3/8  GRAY  fancy     (scaled size 48x36)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 4/8  RGB   nosmooth  (scaled size 64x48)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 4/8  RGB   fancy     (scaled size 64x48)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 4/8  GRAY  nosmooth  (scaled size 64x48)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 4/8  GRAY  fancy     (scaled size 64x48)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 5/8  RGB   nosmooth  (scaled size 80x60)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 5/8  RGB   fancy     (scaled size 80x60)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 5/8  GRAY  nosmooth  (scaled size 80x60)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 5/8  GRAY  fancy     (scaled size 80x60)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 6/8  RGB   nosmooth  (scaled size 96x72)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 6/8  RGB   fancy     (scaled size 96x72)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 6/8  GRAY  nosmooth  (scaled size 96x72)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 6/8  GRAY  fancy     (scaled size 96x72)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 7/8  RGB   nosmooth  (scaled size 112x84)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 7/8  RGB   fancy     (scaled size 112x84)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 7/8  GRAY  nosmooth  (scaled size 112x84)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 7/8  GRAY  fancy     (scaled size 112x84)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 8/8  RGB   nosmooth  (scaled size 128x95)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 8/8  RGB   fancy     (scaled size 128x95)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 8/8  GRAY  nosmooth  (scaled size 128x95)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 8/8  GRAY  fancy     (scaled size 128x95)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+
+====================================================================
+image: jpgs/420prog.jpg (jpgs/420prog.jpg)
+====================================================================
+-- scale 1/8  RGB   nosmooth  (scaled size 16x12)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+  [PASS  ] error case zero width                   -> invalid argument
+  [PASS  ] error case zero height                  -> invalid argument
+  [PASS  ] error case rectangle past right edge    -> crop rectangle outside scaled image
+  [PASS  ] error case rectangle past bottom edge   -> crop rectangle outside scaled image
+  [PASS  ] error case x beyond image               -> crop rectangle outside scaled image
+  [PASS  ] error case bad scale numerator          -> unsupported DCT scaling factor
+  [PASS  ] error case non-DCT denominator          -> unsupported DCT scaling factor
+  [PASS  ] error case bad format enum              -> invalid argument
+-- scale 1/8  RGB   fancy     (scaled size 16x12)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 1/8  GRAY  nosmooth  (scaled size 16x12)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 1/8  GRAY  fancy     (scaled size 16x12)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 2/8  RGB   nosmooth  (scaled size 32x24)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 2/8  RGB   fancy     (scaled size 32x24)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 2/8  GRAY  nosmooth  (scaled size 32x24)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 2/8  GRAY  fancy     (scaled size 32x24)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 3/8  RGB   nosmooth  (scaled size 48x36)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 3/8  RGB   fancy     (scaled size 48x36)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 3/8  GRAY  nosmooth  (scaled size 48x36)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 3/8  GRAY  fancy     (scaled size 48x36)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 4/8  RGB   nosmooth  (scaled size 64x48)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 4/8  RGB   fancy     (scaled size 64x48)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 4/8  GRAY  nosmooth  (scaled size 64x48)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 4/8  GRAY  fancy     (scaled size 64x48)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 5/8  RGB   nosmooth  (scaled size 80x60)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 5/8  RGB   fancy     (scaled size 80x60)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 5/8  GRAY  nosmooth  (scaled size 80x60)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 5/8  GRAY  fancy     (scaled size 80x60)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 6/8  RGB   nosmooth  (scaled size 96x72)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 6/8  RGB   fancy     (scaled size 96x72)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 6/8  GRAY  nosmooth  (scaled size 96x72)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 6/8  GRAY  fancy     (scaled size 96x72)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 7/8  RGB   nosmooth  (scaled size 112x84)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 7/8  RGB   fancy     (scaled size 112x84)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 7/8  GRAY  nosmooth  (scaled size 112x84)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 7/8  GRAY  fancy     (scaled size 112x84)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 8/8  RGB   nosmooth  (scaled size 128x95)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 8/8  RGB   fancy     (scaled size 128x95)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 8/8  GRAY  nosmooth  (scaled size 128x95)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 8/8  GRAY  fancy     (scaled size 128x95)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+
+====================================================================
+image: jpgs/wide420.jpg (jpgs/wide420.jpg)
+====================================================================
+-- scale 1/8  RGB   nosmooth  (scaled size 64x48)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+  [PASS  ] error case zero width                   -> invalid argument
+  [PASS  ] error case zero height                  -> invalid argument
+  [PASS  ] error case rectangle past right edge    -> crop rectangle outside scaled image
+  [PASS  ] error case rectangle past bottom edge   -> crop rectangle outside scaled image
+  [PASS  ] error case x beyond image               -> crop rectangle outside scaled image
+  [PASS  ] error case bad scale numerator          -> unsupported DCT scaling factor
+  [PASS  ] error case non-DCT denominator          -> unsupported DCT scaling factor
+  [PASS  ] error case bad format enum              -> invalid argument
+-- scale 1/8  RGB   fancy     (scaled size 64x48)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 1/8  GRAY  nosmooth  (scaled size 64x48)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 1/8  GRAY  fancy     (scaled size 64x48)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 2/8  RGB   nosmooth  (scaled size 128x96)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 2/8  RGB   fancy     (scaled size 128x96)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 2/8  GRAY  nosmooth  (scaled size 128x96)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 2/8  GRAY  fancy     (scaled size 128x96)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 3/8  RGB   nosmooth  (scaled size 192x144)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 3/8  RGB   fancy     (scaled size 192x144)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 3/8  GRAY  nosmooth  (scaled size 192x144)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 3/8  GRAY  fancy     (scaled size 192x144)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 4/8  RGB   nosmooth  (scaled size 256x192)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 4/8  RGB   fancy     (scaled size 256x192)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 4/8  GRAY  nosmooth  (scaled size 256x192)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 4/8  GRAY  fancy     (scaled size 256x192)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 5/8  RGB   nosmooth  (scaled size 320x240)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 5/8  RGB   fancy     (scaled size 320x240)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 5/8  GRAY  nosmooth  (scaled size 320x240)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 5/8  GRAY  fancy     (scaled size 320x240)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 6/8  RGB   nosmooth  (scaled size 384x288)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 6/8  RGB   fancy     (scaled size 384x288)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 6/8  GRAY  nosmooth  (scaled size 384x288)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 6/8  GRAY  fancy     (scaled size 384x288)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 7/8  RGB   nosmooth  (scaled size 448x336)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 7/8  RGB   fancy     (scaled size 448x336)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 7/8  GRAY  nosmooth  (scaled size 448x336)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 7/8  GRAY  fancy     (scaled size 448x336)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 8/8  RGB   nosmooth  (scaled size 512x384)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 8/8  RGB   fancy     (scaled size 512x384)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EDGE  ] unaligned interior     mismatches=30 (only L=0 R=1 edge columns, documented fancy-upsampling exception)
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EDGE  ] odd 1-wide column      mismatches=57 (only L=1 R=0 edge columns, documented fancy-upsampling exception)
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 8/8  GRAY  nosmooth  (scaled size 512x384)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 8/8  GRAY  fancy     (scaled size 512x384)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+
+====================================================================
+image: jpgs/wide422.jpg (jpgs/wide422.jpg)
+====================================================================
+-- scale 1/8  RGB   nosmooth  (scaled size 64x48)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+  [PASS  ] error case zero width                   -> invalid argument
+  [PASS  ] error case zero height                  -> invalid argument
+  [PASS  ] error case rectangle past right edge    -> crop rectangle outside scaled image
+  [PASS  ] error case rectangle past bottom edge   -> crop rectangle outside scaled image
+  [PASS  ] error case x beyond image               -> crop rectangle outside scaled image
+  [PASS  ] error case bad scale numerator          -> unsupported DCT scaling factor
+  [PASS  ] error case non-DCT denominator          -> unsupported DCT scaling factor
+  [PASS  ] error case bad format enum              -> invalid argument
+-- scale 1/8  RGB   fancy     (scaled size 64x48)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 1/8  GRAY  nosmooth  (scaled size 64x48)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 1/8  GRAY  fancy     (scaled size 64x48)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 2/8  RGB   nosmooth  (scaled size 128x96)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 2/8  RGB   fancy     (scaled size 128x96)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EDGE  ] unaligned interior     mismatches=32 (only L=0 R=1 edge columns, documented fancy-upsampling exception)
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EDGE  ] odd 1-wide column      mismatches=66 (only L=1 R=0 edge columns, documented fancy-upsampling exception)
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 2/8  GRAY  nosmooth  (scaled size 128x96)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 2/8  GRAY  fancy     (scaled size 128x96)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 3/8  RGB   nosmooth  (scaled size 192x144)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 3/8  RGB   fancy     (scaled size 192x144)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EDGE  ] unaligned interior     mismatches=31 (only L=0 R=1 edge columns, documented fancy-upsampling exception)
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EDGE  ] odd 1-wide column      mismatches=61 (only L=1 R=0 edge columns, documented fancy-upsampling exception)
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 3/8  GRAY  nosmooth  (scaled size 192x144)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 3/8  GRAY  fancy     (scaled size 192x144)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 4/8  RGB   nosmooth  (scaled size 256x192)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 4/8  RGB   fancy     (scaled size 256x192)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EDGE  ] unaligned interior     mismatches=32 (only L=0 R=1 edge columns, documented fancy-upsampling exception)
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EDGE  ] odd 1-wide column      mismatches=65 (only L=1 R=0 edge columns, documented fancy-upsampling exception)
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 4/8  GRAY  nosmooth  (scaled size 256x192)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 4/8  GRAY  fancy     (scaled size 256x192)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 5/8  RGB   nosmooth  (scaled size 320x240)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 5/8  RGB   fancy     (scaled size 320x240)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EDGE  ] unaligned interior     mismatches=32 (only L=0 R=1 edge columns, documented fancy-upsampling exception)
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EDGE  ] odd 1-wide column      mismatches=64 (only L=1 R=0 edge columns, documented fancy-upsampling exception)
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 5/8  GRAY  nosmooth  (scaled size 320x240)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 5/8  GRAY  fancy     (scaled size 320x240)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 6/8  RGB   nosmooth  (scaled size 384x288)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 6/8  RGB   fancy     (scaled size 384x288)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EDGE  ] unaligned interior     mismatches=31 (only L=0 R=1 edge columns, documented fancy-upsampling exception)
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EDGE  ] odd 1-wide column      mismatches=59 (only L=1 R=0 edge columns, documented fancy-upsampling exception)
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 6/8  GRAY  nosmooth  (scaled size 384x288)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 6/8  GRAY  fancy     (scaled size 384x288)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 7/8  RGB   nosmooth  (scaled size 448x336)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 7/8  RGB   fancy     (scaled size 448x336)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EDGE  ] unaligned interior     mismatches=28 (only L=0 R=1 edge columns, documented fancy-upsampling exception)
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EDGE  ] odd 1-wide column      mismatches=59 (only L=1 R=0 edge columns, documented fancy-upsampling exception)
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 7/8  GRAY  nosmooth  (scaled size 448x336)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 7/8  GRAY  fancy     (scaled size 448x336)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 8/8  RGB   nosmooth  (scaled size 512x384)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 8/8  RGB   fancy     (scaled size 512x384)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EDGE  ] unaligned interior     mismatches=28 (only L=0 R=1 edge columns, documented fancy-upsampling exception)
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EDGE  ] odd 1-wide column      mismatches=59 (only L=1 R=0 edge columns, documented fancy-upsampling exception)
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 8/8  GRAY  nosmooth  (scaled size 512x384)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+-- scale 8/8  GRAY  fancy     (scaled size 512x384)
+  [EXACT ] full-frame             mismatches=0
+  [EXACT ] top-left 1px           mismatches=0
+  [EXACT ] bottom-right 1px       mismatches=0
+  [EXACT ] unaligned interior     mismatches=0
+  [EXACT ] right-edge strip       mismatches=0
+  [EXACT ] bottom-edge strip      mismatches=0
+  [EXACT ] odd 1-wide column      mismatches=0
+  [EXACT ] odd 1-tall row         mismatches=0
+
+====================================================================
+CONSISTENCY SUMMARY
+====================================================================
+component samples compared : 12132048
+total mismatching samples  : 734
+byte-exact decode runs     : 2032
+edge-only diff runs        : 16 (fancy upsampling, documented)
+runs with interior diffs   : 0 (must be zero)

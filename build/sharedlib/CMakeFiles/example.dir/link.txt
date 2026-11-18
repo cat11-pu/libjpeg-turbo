@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/example.dir/link.d CMakeFiles/example.dir/__/src/example.c.o -o ../example  -Wl,-rpath,/home/cat/gsb/uid4101/build ../libjpeg.so.8.3.2
